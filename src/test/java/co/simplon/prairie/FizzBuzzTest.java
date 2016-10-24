@@ -11,10 +11,12 @@ public class FizzBuzzTest {
     @Test
     public void la_correspondance_de_0_est_0() {
         FizzBuzz fizzBuzz = new FizzBuzz();
+        String reponse = fizzBuzz.determinerCorrespondance(0);
+
         assertEquals(
                 "La correspondance pour 0 doit être 0.",
                 "0",
-                fizzBuzz.determinerCorrespondance(0)
+                reponse
         );
     }
 
@@ -34,7 +36,7 @@ public class FizzBuzzTest {
         assertEquals(
                 "La correspondance pour 5 doit être Buzz.",
                 "Buzz",
-                fizzBuzz.determinerCorrespondance(0)
+                fizzBuzz.determinerCorrespondance(5)
         );
     }
 }
