@@ -30,22 +30,17 @@ public class FizzBuzz {
     }
 
     protected String determinerCorrespondance(int entier) {
-
-            
-
-            if (entier ==0) {
+            if (entier == 0) {
                 return "0";
             }
 
-            if (entier%3 ==0) {
+            if (entier % 3 == 0) {
                 return "Fizz";
             } 
 
-            else if (entier%5 ==0) {
+            if (entier % 5 == 0) {
                 return "Buzz";
-            }   
-
-            else  
+            }
 
             return String.valueOf(entier);
              
