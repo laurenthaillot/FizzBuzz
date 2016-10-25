@@ -47,7 +47,7 @@ public class FizzBuzz {
 
             else  
 
-            return "entier";
+            return String.valueOf(entier);
              
     }
 

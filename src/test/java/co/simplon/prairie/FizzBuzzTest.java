@@ -39,4 +39,27 @@ public class FizzBuzzTest {
                 fizzBuzz.determinerCorrespondance(5)
         );
     }
+
+
+    @Test
+    public void la_correspondance_de_2_est_2() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(
+                "La correspondance pour 2 doit être 2.",
+                "2",
+                fizzBuzz.determinerCorrespondance(2)
+        )
+        ;
+    }
+
+     @Test
+    public void la_correspondance_de_4_est_4() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(
+                "La correspondance pour 4 doit être 4.",
+                "4",
+                fizzBuzz.determinerCorrespondance(4)
+        )
+        ;
+    }
 }
