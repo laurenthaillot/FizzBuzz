@@ -8,17 +8,27 @@ import static org.junit.Assert.assertEquals;
  */
 public class FizzBuzzTest {
 
-    @Test
-    public void la_correspondance_de_0_est_0() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        String reponse = fizzBuzz.determinerCorrespondance(0);
-
-        assertEquals(
-                "La correspondance pour 0 doit être 0.",
-                "0",
-                reponse
-        );
-    }
+ 
+	
+	 @Test
+	    public void la_correspondance_de_0_est_0() {
+	        FizzBuzz fizzBuzz = new FizzBuzz();
+	        assertEquals(
+	                "La correspondance pour 0 doit être 0.",
+	                "0",
+	                fizzBuzz.determinerCorrespondance(0)
+	        );
+	    }
+	 
+	 @Test
+	    public void la_correspondance_de_15_est_Fizz() {
+	        FizzBuzz fizzBuzz = new FizzBuzz();
+	        assertEquals(
+	                "La correspondance pour 15 doit être Fizzbuzz.",
+	                "Fizzbuzz",
+	                fizzBuzz.determinerCorrespondance(15)
+	        );
+	    }
 
     @Test
     public void la_correspondance_de_3_est_Fizz() {
@@ -62,4 +72,5 @@ public class FizzBuzzTest {
         )
         ;
     }
+     
 }
